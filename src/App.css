@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/IMG_0466.jpg);
+  background-size: 100% 100%;
+  filter: blur(5px);
+}
+
+.App {
+  padding: 30px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: 'Lobster', cursive;
+  color: rgb(220, 220, 220);
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+}
+
+.App .main-title {
+  font-size: 80px;
+}
+
+.App .sub-title {
+  font-size: 20px;
+}
+
+.buttons-container {
+  padding: 30px;
+}
+
+.buttons-container .button {
+  line-height: 160px;
+  width: 300px;
+  margin: 0 15px;
+  display: inline-block;
+  color: rgb(252, 252, 252);
+  font-size: 40px;
+  text-shadow: 1px 1px 0px black;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.buttons-container .button:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.exterior {
+  background-image: url(https://lh3.googleusercontent.com/QN3qAPpLsEQnBHtS6x8-3mjnL7duOkSrKSCjBEEMXaf5Lf-OUGKvYiwMp9hIICOFHUTg=h900);
+  background-size: 100%;
+}
+
+.interior {
+  background-image: url(http://ecx.images-amazon.com/images/I/91VwILj26CL.jpg);
+  background-size: 100%;
+}
