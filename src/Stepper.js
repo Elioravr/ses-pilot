@@ -9,6 +9,7 @@ import FlatButton from 'material-ui/FlatButton';
 
 import Welcome from './Welcome';
 import ItemsChooser from './ItemsChooser';
+import Which from './Which';
 
 /**
  * Horizontal steppers are ideal when the contents of one step depend on an earlier step.
@@ -41,11 +42,11 @@ class HorizontalLinearStepper extends Component {
   getStepContent(stepIndex) {
     switch (stepIndex) {
       case 0:
-        return <Welcome ref={ref => this.welcomeRef = ref} nextStep={this.handleNext} />;
+        return <Welcome nextStep={this.handleNext} />
       case 1:
         return <ItemsChooser nextStep={this.handleNext} />
       case 2:
-        return 'This is the bit I really care about!';
+        return <Which nextStep={this.handleNext} />
       default:
         return 'You\'re a long way from home sonny jim!';
     }
@@ -67,6 +68,12 @@ class HorizontalLinearStepper extends Component {
             </Step>
             <Step className="step">
               <StepLabel>Which?</StepLabel>
+            </Step>
+            <Step className="step">
+              <StepLabel>How?</StepLabel>
+            </Step>
+            <Step className="step">
+              <StepLabel>Price!</StepLabel>
             </Step>
           </Stepper>
         </div>

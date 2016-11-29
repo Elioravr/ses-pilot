@@ -35,6 +35,21 @@
   font-size: 80px;
 }
 
+.border-bottom {
+  display: block;
+  width: 0px;
+  height: 1px;
+  transition: width 6s;
+  margin: auto;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  background: rgb(252, 252, 252);
+}
+
+.border-bottom.visible {
+  width: 100%;
+}
+
 .App .sub-title {
   font-size: 20px;
 }
@@ -52,6 +67,7 @@
   font-size: 40px;
   text-shadow: 1px 1px 0px black;
   opacity: 1;
+  background-size: 100%;
   cursor: pointer;
 }
 
@@ -62,17 +78,15 @@
 
 .exterior {
   background-image: url(https://lh3.googleusercontent.com/QN3qAPpLsEQnBHtS6x8-3mjnL7duOkSrKSCjBEEMXaf5Lf-OUGKvYiwMp9hIICOFHUTg=h900);
-  background-size: 100%;
 }
 
 .interior {
   background-image: url(http://ecx.images-amazon.com/images/I/91VwILj26CL.jpg);
-  background-size: 100%;
 }
 
 .stepper-container {
   position: absolute;
-  top: 2%;
+  top: 0;
   left: 30px;
   right: 30px;
 }
@@ -105,4 +119,36 @@
 .items-chooser .controls-container.visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+.which-container .button {
+  line-height: 10vw;
+  width: 35vw;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.which-container .buttons-container {
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.which-container .buttons-container.visible {
+  opacity: 1;
+}
+
+.which-container .tile-roof {
+  background-image: url(http://www.aucklandroofing.net.nz/communities/0/004/009/612/140//images/4625618265.jpg);
+}
+
+.which-container .composite-shingles-roof {
+  background-image: url(http://s3-production.bobvila.com/blogs/wp-content/uploads/2013/03/CertainTeed_Symphony-Composite-Slate-Roofing.jpg);
+}
+
+.which-container .flat-roof {
+  background-image: url(http://soduspointroofing.com/wp-content/uploads/2013/06/flat-roof.gif);
+}
+
+.which-container .spanish-tile-roof {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Roof-Tile-3149.jpg);
 }
