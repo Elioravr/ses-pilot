@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Step,
   Stepper,
@@ -8,6 +8,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import FlatButton from 'material-ui/FlatButton';
 
 import Welcome from './Welcome';
+import ItemsChooser from './ItemsChooser';
 
 /**
  * Horizontal steppers are ideal when the contents of one step depend on an earlier step.
@@ -15,7 +16,7 @@ import Welcome from './Welcome';
  *
  * Linear steppers require users to complete one step in order to move on to the next.
  */
-class HorizontalLinearStepper extends React.Component {
+class HorizontalLinearStepper extends Component {
 
   state = {
     finished: false,
@@ -42,7 +43,7 @@ class HorizontalLinearStepper extends React.Component {
       case 0:
         return <Welcome ref={ref => this.welcomeRef = ref} nextStep={this.handleNext} />;
       case 1:
-        return 'What is an ad group anyways?';
+        return <ItemsChooser nextStep={this.handleNext} />
       case 2:
         return 'This is the bit I really care about!';
       default:

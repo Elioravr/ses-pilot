@@ -46,7 +46,7 @@
 .buttons-container .button {
   line-height: 160px;
   width: 300px;
-  margin: 0 15px;
+  margin: 10px 15px;
   display: inline-block;
   color: rgb(252, 252, 252);
   font-size: 40px;
@@ -83,4 +83,26 @@
 
 .step svg text {
   fill: #333 !important;
+}
+
+.items-chooser {
+  padding: 30px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.items-chooser .title {
+  color: #333;
+  text-shadow: none;
+}
+
+.items-chooser .controls-container {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.items-chooser .controls-container.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
