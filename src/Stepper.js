@@ -11,6 +11,7 @@ import Welcome from './Welcome';
 import ItemsChooser from './ItemsChooser';
 import Which from './Which';
 import How from './How';
+import Price from './Price';
 
 /**
  * Horizontal steppers are ideal when the contents of one step depend on an earlier step.
@@ -51,7 +52,7 @@ class HorizontalLinearStepper extends Component {
       case 3:
         return <How nextStep={this.handleNext} />
       default:
-        return 'You\'re a long way from home sonny jim!';
+        return <Price />;
     }
   }
 
