@@ -110,13 +110,15 @@
   text-shadow: none;
 }
 
-.items-chooser .controls-container {
+.items-chooser .controls-container,
+.how-container .controls-container {
   opacity: 0;
   pointer-events: none;
 }
 
 
-.items-chooser .controls-container.visible {
+.items-chooser .controls-container.visible,
+.how-container .controls-container.visible {
   opacity: 1;
   pointer-events: auto;
 }
@@ -151,4 +153,26 @@
 
 .which-container .spanish-tile-roof {
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Roof-Tile-3149.jpg);
+}
+
+.how-container {
+  text-align: center;
+}
+
+.how-container .title {
+  margin-bottom: 10px;
+}
+
+.how-container .example-image {
+  background-image: url(http://www.evoenergy.co.uk/wp-content/uploads/home-suitability_roof-pitch_Aug2012.jpg);
+  background-size: 100%;
+  width: 480px;
+  height: 360px;
+  margin: auto;
+}
+
+.how-container .select-container {
+  width: 480px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: auto;
 }
